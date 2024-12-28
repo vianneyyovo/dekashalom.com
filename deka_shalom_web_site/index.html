@@ -78,6 +78,10 @@
 </head>
 
 <body>
+	<div id="output"></div>
+
+	<div id="google_translate_element"></div>
+
 	<div id="preloader"></div>
 	<a id="wa-anchor-top"></a>
 	<div id="wa-container-wrapper-m06lj0il6gu0eg">
@@ -241,7 +245,8 @@
 						<p style="text-align: center;"> </p>
 						<p style="text-align: center;"><span
 								style="font-size: 20px; color: #333333; font-family: Georgia, 'DejaVu Serif', Norasi, serif;">Créée
-								en 2011, DEKA Shalom est spécialisée dans l'importation et dans la distribution en gros des
+								en 2011, DEKA Shalom est spécialisée dans l'importation et dans la distribution en gros
+								des
 								produits alimentaires.</span></p>
 						<p style="text-align: center;"><span
 								style="font-size: 20px; font-family: Georgia, 'DejaVu Serif', Norasi, serif; color: #333333;"> </span>
@@ -255,7 +260,9 @@
 								style="font-family: Georgia, 'DejaVu Serif', Norasi, serif; color: #333333; font-size: 20px;"> </span>
 						</p>
 						<p style="text-align: center;"><span
-								style="font-family: Georgia, 'DejaVu Serif', Norasi, serif; color: #333333; font-size: 20px;">Nos produits sont d'une qualité exceptionnelle et sont fabriqués dans de grandes usines qui sont certifiées ISO 22000, ISO 9000, HACCP, HALAL.</span></p>
+								style="font-family: Georgia, 'DejaVu Serif', Norasi, serif; color: #333333; font-size: 20px;">Nos
+								produits sont d'une qualité exceptionnelle et sont fabriqués dans de grandes usines qui
+								sont certifiées ISO 22000, ISO 9000, HACCP, HALAL.</span></p>
 					</div>
 				</div>
 				<div class="hidden-xs col-xs-12 col-sm-1 col-md-2 col-lg-2 ">
@@ -348,13 +355,16 @@
 									<p style="text-align: right;"> </p>
 									<p style="text-align: right;"><span
 											style="font-family: Georgia, 'DejaVu Serif', Norasi, serif;"><span
-												style="font-size: 20px; line-height: 28px;">Nous sommes spécialisés dans l’importation, l'exportation de produits alimentaires.
+												style="font-size: 20px; line-height: 28px;">Nous sommes spécialisés dans
+												l’importation, l'exportation de produits alimentaires.
 											</span></span>
 									</p>
 									<p style="text-align: right;"> </p>
 									<p style="text-align: right;"><span
 											style="font-family: Georgia, 'DejaVu Serif', Norasi, serif;"><span
-												style="font-size: 20px; line-height: 28px;">Nous entretenons des relations privilégiées avec nos fournisseurs afin de répondre aux exigences des acheteurs.</span></span></p>
+												style="font-size: 20px; line-height: 28px;">Nous entretenons des
+												relations privilégiées avec nos fournisseurs afin de répondre aux
+												exigences des acheteurs.</span></span></p>
 								</div>
 							</div>
 						</div>
@@ -383,12 +393,14 @@
 									</p>
 									<p> </p>
 									<p><span
-											style="font-family: Georgia, 'DejaVu Serif', Norasi, serif; font-size: 20px; line-height: 1.43; text-align: center;">Nous distribuons les marques que nous représentons ainsi que nos propres marques.
+											style="font-family: Georgia, 'DejaVu Serif', Norasi, serif; font-size: 20px; line-height: 1.43; text-align: center;">Nous
+											distribuons les marques que nous représentons ainsi que nos propres marques.
 										</span></p>
 									<p> </p>
 									<p><span
 											style="font-family: Georgia, 'DejaVu Serif', Norasi, serif; font-size: 20px; line-height: 1.43; text-align: center;"><span
-												style="line-height: 1.43;">Nous sommes présents sur le marché de l'Afrique de l'Ouest.</span></span></p>
+												style="line-height: 1.43;">Nous sommes présents sur le marché de
+												l'Afrique de l'Ouest.</span></span></p>
 								</div>
 							</div>
 						</div>
@@ -659,6 +671,16 @@
 	<link rel="stylesheet" href="wa_webfont_global.16.css" />
 	<link rel="stylesheet" href="wa_css/pages-home.339.css" />
 	<link rel="stylesheet" href="wa_menu/menu.48.css" />
+
+	<script src="https://unpkg.com/i18next@21.8.15/dist/umd/i18next.min.js"></script>
+
+
+	<script type="text/javascript">
+		function googleTranslateElementInit() {
+			new google.translate.TranslateElement({ pageLanguage: 'fr' }, 'google_translate_element');
+		}
+	</script>
+	<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 	<script>
 		document.getElementById("preloader").style.display = 'none';
 	</script>
